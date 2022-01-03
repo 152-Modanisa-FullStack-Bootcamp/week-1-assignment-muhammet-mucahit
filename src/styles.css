@@ -1,4 +1,13 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
