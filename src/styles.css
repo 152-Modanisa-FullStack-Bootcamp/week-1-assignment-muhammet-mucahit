@@ -1,4 +1,211 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+:root {
+  --artdeco-reset-typography-font-family-sans: -apple-system, system-ui,
+  BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu,
+  Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji,
+  Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica,
+  Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eee;
+}
+
+a {
+  color: #0a66c2;
+  font-weight: 500;
+}
+
+hr {
+  margin: 5px 15px;
+  border: 0;
+  border-top: 1px solid #eee;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.link a {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  width: 520px;
+  min-height: 400px;
+  background: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.card .top {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.card .top .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .top .user-details {
+  display: flex;
+  align-items: center;
+}
+
+.card .top .user-details .profile-image {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.card .top .user-details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1em;
+  cursor: pointer;
+}
+
+.card .top .user-details h3 span {
+  font-size: 0.9em;
+  color: #808080;
+  font-weight: 400;
+}
+
+.top .glob-dot {
+  position: relative;
+  padding-bottom: 3px;
+  font-weight: 900;
+  align-items: center;
+  color: #808080;
+}
+
+.top svg {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  vertical-align: bottom !important;
+}
+
+.dot {
+  transform: scale(0.4);
+  cursor: pointer;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background: #eef3f8;
+}
+
+.card-body .link {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-body img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.message {
+  font-weight: 400;
+  margin-top: 5px;
+  line-height: 1.5em;
+}
+
+.link h2 {
+  max-height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.link h3 {
+  max-height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px 10px;
+}
+
+.buttons span {
+  color: #808080;
+}
+
+.buttons img {
+  width: 20px;
+  max-width: 24px;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.buttom-button {
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.buttom-button svg {
+  vertical-align: middle;
 }
